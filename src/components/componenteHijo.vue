@@ -1,7 +1,7 @@
 <template>
     <div>   
-        <p>Nombre:</p>
-        <p>Edad:</p>
+        <p> Nombre: {{nombre}}</p>
+        <p>Edad: {{edad}}</p>
     </div>
 </template>
 

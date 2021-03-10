@@ -11,11 +11,6 @@
 
 import componenteHijo from "./componenteHijo";
 
-
-
-
-
-
     export default {
         name:"componentePadre",
         props:['nombre','edad'],    
