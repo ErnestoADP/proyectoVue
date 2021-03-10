@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <saludos></saludos>
+    <saludoDos></saludoDos>
+    <hr>
+    <h1>Componentes</h1>
+
+   <componentePadre nombre="Manuel" edad="45"></componentePadre>
+   <hr>
+   <componentePadre nombre="jose" edad="56"></componentePadre>
+   <hr>
+   <componentePadre nombre="rodrigo" edad="34"></componentePadre>
+   <hr>
   </div>
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import saludos from "./components/saludos"; 
+import saludoDos from "./components/saludoDos";
+import ComponentePadre from './components/componentePadre';
+
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    saludos,
+    saludoDos,
+    ComponentePadre,
+ 
+    
+ 
+   
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
