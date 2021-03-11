@@ -12,7 +12,12 @@
 <script>
     export default {
         name:"usuarios",
-        props:['id','nombre','email','telefono']
+        props:{
+                id:String,
+                nombre:String,
+                email:String,
+                telefono:String
+        }
     }
 </script>
 
