@@ -11,15 +11,35 @@
    <hr>
    <componentePadre nombre="rodrigo" edad="34"></componentePadre>
    <hr>
-  </div>
+   <hr>
+   <hr>
+   <hr>
+   <hr>
 
+   <h1>Traer datos desde una API</h1>
+
+   <usuarios 
+    
+              v-for="usuario in usuarios" 
+              v-bind:key="usuario.id"
+                 :id="usuario.id"
+                 :nombre="usuario.name"
+                 :email="usuario.email"
+                 :telefono="usuario.phone"    
+              >
+              
+              
+              </usuarios>
+  </div>
 
 </template>
 
 <script>
+import axios from 'axios'
 import saludos from "./components/saludos"; 
 import saludoDos from "./components/saludoDos";
 import ComponentePadre from './components/componentePadre';
+import usuarios from './components/usuarios';
 
 
 
@@ -31,11 +51,31 @@ export default {
     saludos,
     saludoDos,
     ComponentePadre,
+    usuarios,
  
     
  
-   
+
+  },
+  data(){
+    return{
+      usuarios:[],
+
+    }
+
+  },
+  methods:{
+    obtenerUsuarios(){
+            axios.get('https://jsonplaceholder.typicode.com/users')
+          .then((respuestas) => this.usuarios = respuestas.data)
+    }
+  },
+
+  //se monta este componente para que ObtenerUsuario(funcion) haga una llamada a la API
+  mounted(){
+      this.obtenerUsuarios()
   }
+
 }
 </script>
 
