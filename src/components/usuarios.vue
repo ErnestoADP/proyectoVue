@@ -13,7 +13,7 @@
     export default {
         name:"usuarios",
         props:{
-                id:String,
+                id:{type:Number},
                 nombre:String,
                 email:String,
                 telefono:String
