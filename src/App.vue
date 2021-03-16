@@ -19,17 +19,39 @@
    <h1>Traer datos desde una API</h1>
 
    <usuarios 
-    
               v-for="usuario in usuarios" 
               v-bind:key="usuario.id"
                  :id="usuario.id"
                  :nombre="usuario.name"
                  :email="usuario.email"
                  :telefono="usuario.phone"    
-              >
-              
-              
+              >  
               </usuarios>
+
+              <hr>
+
+ <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+
+        <h1>clase de componentes</h1>
+        <hr>
+ <componenteSlot>
+   hola desde slot 
+
+   <template slot="slotdos">
+
+
+   </template>
+
+ </componenteSlot>
+
+
+
+
   </div>
 
 </template>
@@ -40,6 +62,7 @@ import saludos from "./components/saludos";
 import saludoDos from "./components/saludoDos";
 import ComponentePadre from './components/componentePadre';
 import usuarios from './components/usuarios';
+import ComponenteSlot from './components/componenteSlot';
 
 
 
@@ -52,6 +75,8 @@ export default {
     saludoDos,
     ComponentePadre,
     usuarios,
+    ComponenteSlot,
+    
  
     
  
