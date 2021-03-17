@@ -37,7 +37,7 @@
         <hr>
         <hr>
 
-        <h1>clase de componentes</h1>
+        <h1>clase de componentes slot</h1>
         <hr>
  <componenteSlot>
    hola desde slot 
@@ -48,7 +48,14 @@
    </template>
 
  </componenteSlot>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1>Custom evetn</h1>
 
+<padre></padre>
 
 
 
@@ -63,6 +70,8 @@ import saludoDos from "./components/saludoDos";
 import ComponentePadre from './components/componentePadre';
 import usuarios from './components/usuarios';
 import ComponenteSlot from './components/componenteSlot';
+import Padre from './components/padre';
+
 
 
 
@@ -76,11 +85,8 @@ export default {
     ComponentePadre,
     usuarios,
     ComponenteSlot,
+    Padre,
     
- 
-    
- 
-
   },
   data(){
     return{

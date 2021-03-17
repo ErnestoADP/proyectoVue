@@ -9,6 +9,8 @@
 
        
 
+       
+
         <h2>
             <slot name="slotdo2">
                 hola desde el componente 2
