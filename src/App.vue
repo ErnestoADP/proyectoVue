@@ -57,7 +57,19 @@
 
 <padre></padre>
 
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
 
+<elementorender tipo="h1"> texto de este elemento</elementorender>
+<elementorender tipo="h2"> texto de este elemento</elementorender>
+<elementorender tipo="h3"> texto de este elemento</elementorender>
+<elementorender tipo="p"> texto de este elemento</elementorender>
 
   </div>
 
@@ -71,6 +83,7 @@ import ComponentePadre from './components/componentePadre';
 import usuarios from './components/usuarios';
 import ComponenteSlot from './components/componenteSlot';
 import Padre from './components/padre';
+import elementorender from './components/elementorender';
 
 
 
@@ -86,7 +99,12 @@ export default {
     usuarios,
     ComponenteSlot,
     Padre,
+    elementorender,
     
+
+
+
+
   },
   data(){
     return{
